@@ -12,4 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require_tree .
+//= require underscore
+//= require backbone
+//= require mustache
+//= require_tree collection
+//= require_tree models
+//= require_tree views
+//= require_tree routers
