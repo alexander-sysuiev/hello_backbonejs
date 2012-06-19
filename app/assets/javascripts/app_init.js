@@ -5,6 +5,6 @@ var App = {
   Views: {},
   init: function(){
     new App.Routers.Todos();
-    // Backbone.history.start();
+    Backbone.history.start();
   }
 }

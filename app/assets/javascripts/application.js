@@ -16,8 +16,3 @@
 //= require backbone
 //= require mustache
 //= require app_init
-//= require_tree ./collections
-//= require_tree ./models
-//= require_tree ./views
-//= require_tree ./routers
-

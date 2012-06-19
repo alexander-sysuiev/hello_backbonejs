@@ -1,17 +1,21 @@
-<form id="data_input">
-  <%= label_tag :todo_name, 'To Do:' %>
-  <%= text_field_tag :todo_name %>
-  <%= submit_tag 'Save', :id => 'submit_data' %>
-</form>
+<div id="todo_app">
+  <form id="data_input">
+    <%= label_tag :todo_name, 'To Do:' %>
+    <%= text_field_tag :todo_name %>
+    <%= submit_tag 'Save', :id => 'submit_data' %>
 
-<div id="todo_list">
-  
+  </form>
+
+  <div id="todo_list">
+
+  </div>
+
+  <script type="text/template" id="todos_template">
+    <ul id="items_list">
+      {{#todos}}
+        <li class="item">{{attributes.name}}</li>
+      {{/todos}}
+    </ul>
+  </script>
+  <%= javascript_include_tag 'index_page' %>
 </div>
-
-<script type="text/template" id="todos_template">
-  <ul id="items_list">
-    {{#todos}}
-      <li class="item">{{todo.name}}</li>
-    {{/todos}}
-  </ul>
-</script>
